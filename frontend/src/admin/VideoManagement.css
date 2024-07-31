@@ -1,0 +1,202 @@
+/* Container for the entire VideoManagement component */
+.video-management-videoadmin {
+    padding: 20px;
+  }
+  .video-item-videoadmin h2 {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+  
+  /* Title and actions */
+  .video-actions-videoadminbas {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .video-management-videoadmin-h2{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .video-actions-videoadmin li {
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form for adding/editing videos */
+  .video-form-videoadmin {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .video-form-videoadmin form {
+    background-color: #fff; /* White background */
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .video-form-videoadmin form input,
+  .video-form-videoadmin form textarea {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+  }
+  
+  .video-form-videoadmin form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF; /* Primary color */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .video-form-videoadmin form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .video-form-videoadmin form .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  .video-form-videoadmin form h2 {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  
+  /* List of all videos */
+  .all-videos-videoadmin {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-item-videoadmin {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .video-item-videoadmin h4 {
+    margin: 0;
+  }
+  
+  .video-item-videoadmin p {
+    margin: 5px 0;
+  }
+  
+  .video-item-videoadmin .video-actions-videoadmin {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Buttons for actions */
+  .video-item-videoadmin .video-actions-videoadmin button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Slide-out delete button */
+  .video-item-videoadmin .video-actions-videoadmin button:hover .delete-button-videoadmin {
+    display: block;
+  }
+  
+  .delete-button-videoadmin {
+    background-color: #dc3545;
+  }
+  
+  .delete-button-videoadmin {
+    display: none;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Detail view of a selected video */
+  .selected-video-videoadmin {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .selected-video-videoadmin h3 {
+    margin-top: 0;
+  }
+  
+  .deleetandupdate-videoadmin {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .deleetandupdate-videoadmin .delete-button-videoadmin {
+    background-color: #dc3545;
+  }
+  
+  .deleetandupdate-videoadmin .back-button-videoadmin {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 450px) {
+
+    .video-form-videoadmin label {
+      font-size: 12px;
+    }
+  
+    .video-form-videoadmin input,
+    .video-form-videoadmin textarea {
+      font-size: 12px;
+    }
+  
+    .video-actions-videoadmin button {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .video-item-videoadmin h4 {
+      font-size: 14px;
+    }
+  
+    .video-item-videoadmin p {
+      font-size: 12px;
+    }
+    .video-item-videoadmin .video-actions-videoadmin {
+        display: flex;
+    flex-direction: column;
+        }
+  }
+  

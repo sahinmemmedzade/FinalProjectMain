@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.admin{
+  display: flex;
+}
+.options{
+  width: 80%;
+}
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-panel {
+  height: 100vh;
+  width: 20%; /* Sidebar takes up 1/5th of the width */
+  background-color: #f8f9fa;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif; /* Apply font */
+}
+
+.admin-panel h1{
+  opacity: 0;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.admin-panel div {
+  transition: background-color 0.3s ease;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.admin-panel h3 {
+  font-size: 18px; /* Title size */
+  transition: font-size 0.3s ease; /* Smooth transition effect */
+}
+
+.admin-panel h3:hover {
+}
+
+.admin-panel div:hover {
+  background-color: #e2e6ea; 
+  cursor: pointer; /* Change div color on hover */
+}
+
+.admin-panel div:hover .icon {
+}
+
+/* .admin-panel h3 .icon {
+  margin-right: 10px;
+  padding: 10px;
+} */
+
+.reklam-container {
+  width: 80%; /* Main content takes up 4/5ths of the width */
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align to the top */
+  padding: 20px;
+}
+@media screen and (max-width:950px) {
+  .admin-panel h3{
+    font-size: 12px;
+  } 
+}
+@media screen and (max-width:800px) {
+  .admin-panel h3{
+    font-size: 12px;
+  } 
+  .admin-panel h3:hover {
+    font-size: 14px; /* Increase size on hover */
+  }
+  .admin-panel div:hover .icon {
+    font-size: 14px; /* Change icon size on hover */
+  }
+  .admin-panel h3 .icon {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:700px) {
+  .admin-panel h3{
+    font-size: 10px;
+  } 
+  .admin-panel h3:hover {
+    font-size: 12px; /* Increase size on hover */
+  }
+  .admin-panel div:hover .icon {
+    font-size: 12px; /* Change icon size on hover */
+  }
+  .admin-panel h3 .icon {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+ 
+  .admin-panel{
+    width: 50px;
+  }
+  .options {
+    width: calc(80% + 50px);
+  }
+  .admin-panel div svg{
+    font-size: 18px;
+  }
+  .admin-panel h3{
+    display: none;
+  }
+}

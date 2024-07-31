@@ -1,0 +1,213 @@
+.elaqeye-options {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-header, .contact-row {
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-header {
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.contact-row {
+  transition: background-color 0.3s;
+  position: relative;
+  
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.contactcompanyName{
+    width: 50%;
+}
+.contactsubject{
+    width: 100%;
+}
+.contactemail{
+    width: 100%;
+}
+.contactmessage{
+    width: 100%;
+}
+.contact-row{
+    display: flex;
+}
+.contact-row:hover {
+  background-color: #f0f0f0;
+}
+
+.optionselaqe {
+  position: relative;
+margin-left: 20px;
+width: 15%;
+}
+
+.more-icon {
+  cursor: pointer;
+}
+
+.options-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff; /* Ensure white background */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 100; /* Ensure it appears on top of other elements */
+}
+
+.contact-row:hover .options-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.options-menu button {
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.view-message-button {
+  color: #007BFF;
+}
+
+.delete-button-elaqe {
+  color: red;
+}
+
+.delete-button:hover, .view-message-button:hover {
+  background-color: #f0f0f0;
+}
+
+.contact-detail {
+  margin-top: 20px;
+}
+
+.contact-detail-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-confirmation {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 100; /* Ensure it appears on top of other elements */
+}
+
+.confirm-delete, .cancel-delete {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.confirm-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-delete {
+  background-color: #6c757d;
+  color: white;
+}
+
+.confirm-delete:hover {
+  background-color: #c82333;
+}
+
+.cancel-delete:hover {
+  background-color: #5a6268;
+}
+@media screen and (max-width:1100px) {
+    .contactcompanyName{
+        font-size: 14px;
+
+    }
+    .contactsubject{
+        font-size: 14px;
+
+    }
+    .contactemail{
+        font-size: 14px;
+
+    }
+    .contactmessage{
+       font-size: 14px;
+    }
+    .optionselaqe{
+        font-size: 14px;
+
+    }
+}
+@media screen and (max-width:620px) {
+    .contactcompanyName{
+        font-size: 10px;
+
+    }
+    .contactsubject{
+        font-size: 10px;
+
+    }
+    .contactemail{
+        font-size: 10px;
+
+    }
+    .contactmessage{
+       font-size: 10px;
+    }
+    .optionselaqe{
+        font-size: 12px;
+
+    }
+}

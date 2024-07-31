@@ -1,0 +1,39 @@
+/* CanliVideoAdmin.css */
+.canli-video-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .canli-video-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .canli-video-button:hover {
+    background-color: #0056b3;
+  }
+  @media screen and (max-width:800px) {
+    .canli-video-button{
+        width: 80%;
+    }
+  }
+  @media screen and (max-width:600px) {
+    .canli-video-button{
+        
+        font-size: 14px;
+    }
+  }
+  @media screen and (max-width:600px) {
+    .canli-video-button{
+        
+        font-size: 12px;
+    }
+  }

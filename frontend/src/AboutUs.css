@@ -1,0 +1,148 @@
+/* AboutUs.css */
+
+/* Wrapper for the entire about us section */
+.about-us-wrapper {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient similar to AdComponent */
+    padding: 20px;
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main container for about us content */
+.about-us {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff; /* Text color matching the background gradient */
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    width: 150px;
+}
+
+.header .icons i {
+    font-size: 24px;
+    color: #fff; /* Matching the gradient text color */
+}
+
+/* Content styles */
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff; /* Matching the gradient text color */
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #fff; /* Matching the gradient text color */
+}
+
+/* Footer about section styles */
+.footerabout .aboutimage>img {
+    width: 150px;
+    height: 150px;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.footer ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Matching the gradient text color */
+}
+
+/* Contact section styles */
+.aboutcontact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.unvan, .email, .telefon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unvan h4, .email h4, .telefon h4 {
+    margin-bottom: 0;
+}
+
+.elaqe {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Matching the gradient text color */
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+    .about-us {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 685px) {
+    .aboutcontact {
+        flex-direction: column;
+    }
+    .email, .unvan, .telefon {
+        width: 98%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .header .logo {
+        width: 120px;
+    }
+
+    .header .icons i {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p, .footer p, .footer ul li {
+        font-size: 16px;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+}

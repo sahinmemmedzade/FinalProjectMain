@@ -1,0 +1,239 @@
+html{
+  background-color: #f0f4f8;
+
+}
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+margin: 0;
+padding: 0;
+background-color: #f0f4f8;
+
+}
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.signup-form {
+  margin-top: 100px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  cursor: pointer;
+}
+.toggle-visibilitysignup{
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+.toggle-visibility.error-present {
+  top: -200px;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: color 0.3s ease;
+  background-color: white;
+}
+
+.createbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4%;
+}
+
+.create-account-btn:hover {
+  color: white;
+  background-color: #1877f2; /* Butonun metin rengi beyaz olacak */
+}
+
+.social-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.google-btn,
+.facebook-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.google-btn:hover,
+.facebook-btn:hover {
+  background-color: #f0f0f0;
+  color: white;
+  /* Buton hover edildiğinde arka plan rengi */
+}
+
+.google-btn .social-icon,
+.facebook-btn .social-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: inherit; /* İkonların metin rengini kalıt olaraq alacak */
+}
+
+.facebook-btn {
+  background-color: #1877f2; /* Facebook rengi */
+  color: #ffffff;
+  width: 55%; /* Buton metin rengi beyaz olacak */
+}
+
+.facebook-btn:hover {
+  background-color: #3b5998; /* Facebook hover rengi */
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 55%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #4285f4; /* Google hover rengi */
+}
+
+.google-btn .social-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #4285f4; /* Google original rengi */
+}
+
+.google-btn:hover .social-icon {
+  color: white;
+}
+
+.error {
+  color: white;
+  background-color: red;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 100%;
+}
+.passlogin{
+  display: flex;
+  width: 100%;
+  margin-top: 2%;
+  margin-right: 3%;
+
+}
+.passlogin>a{
+  text-decoration: none;
+}
+@media screen and (max-width:750px) {
+  .signup-form{
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width:600px) {
+  .signup-form{
+margin-left: 50px;
+  }
+}
+@media screen and (max-width:450px) {
+  .create-account-btn{
+    font-size: 14px;
+  }
+  .google-btn,
+.facebook-btn{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width:520px){
+  .signup-form{
+    width: 70%;
+  height: 75%;
+  }
+ 
+}
+@media screen and (max-width:400px) {
+  .signup-form{
+    width: 60%;
+    height: 65%;
+  }
+  .google-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .create-account-btn{
+width: 100%;
+  }
+  .signup-form>h2{
+    font-size: 16px;
+  }
+  .passlogin{
+    font-size: 12px;
+  }
+}

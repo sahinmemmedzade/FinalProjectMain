@@ -1,0 +1,18 @@
+.advertisiment-container {
+    display: flex;
+    flex-wrap: wrap; /* Elementlərin növbəti sətrə keçməsi */
+    gap: 10px; /* Elementlər arasında boşluq */
+  }
+  
+  .advertisiment {
+    width: 200px; /* Hər bir reklam qutusu üçün genişlik */
+    height: 200px; /* Hər bir reklam qutusu üçün hündürlük */
+    background-size: cover; 
+    background-position: center; /* Şəkilin mərkəzə yerləşdirilməsi */
+    border-radius: 5px; /* Dəyirmi kənarları üçün opsional */
+  }
+  .ad-images{
+    height: 450px;
+    width: 300px;
+  }
+  

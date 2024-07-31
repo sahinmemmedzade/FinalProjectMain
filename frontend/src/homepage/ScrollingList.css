@@ -1,0 +1,157 @@
+.scrolling-list {
+    width: 30%;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .item-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .list-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    cursor: pointer;
+    height: max-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .eyescroll{
+    display: flex;
+    gap:2px;
+    align-items: center;
+  }
+  .calendarscrol{
+    display: flex;
+    gap:2px;
+    align-items: center;
+  }
+  .time, .views, .icon {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .item-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .item-text {
+    white-space: wrap; 
+    text-overflow: ellipsis;
+    max-width: 100%; /* Maksimum eni təyin edə bilərsiniz */
+  }
+
+
+
+  @media screen and (width < 900px) {
+    .scrolling-list{
+      width: 90%;
+      margin-left: 10%
+    }
+    .item-text {
+      font-size: 12px;
+    }
+  }
+
+
+
+@media screen and (width < 650px) {
+  .scrolling-list{
+    width: 100%;
+  }
+  .item-text {
+    font-size: 12px;
+  }
+  
+}
+/*    
+    @media screen and (max-width:2000px) {
+     .scrolling-list{
+      margin-top: 5%;
+     }
+    }   
+    @media screen and (max-width:1600px) {
+      .scrolling-list{
+        margin-top: 6%;
+       }
+    }
+     
+    @media screen and (max-width: 1200px) {
+      .scrolling-list {
+        max-height: 53vh;
+        margin-bottom: 2%;
+      }
+      .list-item {
+        text-overflow: ellipsis;
+      }
+      .item-text {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+      .scrolling-list {
+        max-height: 48vh;
+        margin-bottom: 6%;
+      }
+      .list-item {
+        text-overflow: ellipsis;
+      }
+      .item-text {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .scrolling-list {
+        max-height: 43vh;
+        margin-bottom: 7%;
+      } 
+    }
+    @media screen and (max-width: 880px) {
+      .scrolling-list {
+        max-height: 53vh;
+        margin-top: 4%;
+      } 
+    }
+    @media screen and (max-width:690px){
+      .item-header .views{
+font-size: 12px;
+      }
+    }
+    @media screen and (max-width:600px){
+    .scrolling-list{
+      width: 28%;
+    }
+    }
+    @media screen and (max-width:500px){
+      .item-header .views,.item-header .icon,.item-header .time{
+        font-size: 8px;
+              }
+      .scrolling-list{
+        width: 25%;
+      }
+      .item-text{
+        font-size: 9px;
+      }
+      }
+      @media screen and (max-width:400px){
+        .scrolling-list{
+          width: 20%;
+        }
+        .item-text{
+          font-size: 7px;
+        }
+      }
+  */

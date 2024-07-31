@@ -1,0 +1,508 @@
+
+/* General container styles */
+.cardsandanounce{
+    width: 100%;
+    height: max-content;
+    margin-top: -120px;
+}
+.card-pagination{
+    overflow-x: hidden;
+}
+.cardanouncehome{
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+.containercategoryhome>.card{
+    margin-left: 5%;
+}
+.advertisiment{
+    width: 10%;
+    margin-left:80px; 
+}
+.searchandcards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    width: 100%;
+    /* margin-left: 17%;   */
+    padding-bottom: 10px;  
+}
+.containercategory{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    width: 70%;
+    margin: 0 auto;
+    /* margin-left: 17%;   */
+    padding-bottom: 10px;  
+}
+.cardsandanounce{
+    display: flex;
+}
+.advertisiment{
+    display: flex;
+margin-top: 20%;
+}
+.containercategoryhome{
+    margin-top: -160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    width: 100%;
+    /* margin-left: 17%;   */
+    padding-bottom: 10px;  
+}
+
+.serachinandname{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.search-boxcategory .btn-search{
+    right: 20%;
+}
+.categoryname {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* Mətnin rəngi ağ olacaq */
+    border: 2px solid #8a2be2; /* Mavi bənövşəyi sərhəd */
+    border-radius: 10px; /* Küncləri yuvarlaqlaşdırma */
+    width: 30%;
+    margin-left: 35%; /* Mərkəzləşdirilmiş yerləşdirmə */
+    border-left: none;
+    margin-top: -200px;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff4b1f, #ff416c); /* Parlaq gradient fon */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Yüngül kölgə */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Mətnə yüngül parıltı */
+    transition: transform 0.3s, box-shadow 0.3s; /* Təsir və kölgə üçün keçid animasiyası */
+}
+.categorynamecategory{
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* Mətnin rəngi ağ olacaq */
+    border: 2px solid #8a2be2; /* Mavi bənövşəyi sərhəd */
+    border-radius: 10px; /* Küncləri yuvarlaqlaşdırma */
+    width: 30%;
+    margin-left: 35%; /* Mərkəzləşdirilmiş yerləşdirmə */
+    border-left: none;
+    margin-bottom: 140px;
+    display: none;
+    margin-top: 80px;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff4b1f, #ff416c); /* Parlaq gradient fon */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Yüngül kölgə */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Mətnə yüngül parıltı */
+    transition: transform 0.3s, box-shadow 0.3s; /* Təsir və kölgə üçün keçid animasiyası */
+
+}
+.categoryname:hover {
+    transform: rotate(0deg); /* Hover zamanı təsiri düzləşdirir */
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3); /* Hover zamanı kölgəni artırır */
+}
+
+.serachinandname{
+    display: flex;
+
+}
+.btn-search.hidden {
+    opacity: 0; /* Hide the search icon */
+  }
+  .search-boxcategory.open {
+    width: 250px; /* Adjust width as needed */
+  }
+.search-boxcategory{
+    margin-top: 150px;
+    margin-right: 5%;
+    width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.search-container {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+.search-container input {
+    display: none; /* Hidden by default */
+    padding: 5px;
+    border-bottom: 2px solid #007bff; /* Blue bottom border */
+    outline: none;
+    transition: all 0.3s ease;
+}
+.like-dislike .like>svg{
+font-size: 16px;
+}
+.like-dislike .like>p{
+    font-size: 16px;
+    }
+
+.like-dislike .like, .like-dislike .dislike {
+    display: flex;
+
+justify-content: end;
+    align-items: center;
+    gap: 5px; /* Optional: Adds space between the icon and text */
+  }
+.search-container.active input {
+    display: inline-block; /* Visible when active */
+    width: 150px;
+    border: none; /* Remove border */
+}
+.containercategoryhome .card{
+    width: 25%;
+}
+.search-container svg {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Card styles */
+.card {
+    width: 27%;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.card-header .cardcategory {
+    color: greenyellow;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 16px 16px;
+}
+
+.card-footer .date,
+.card-footer .views {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-footer .date svg,
+.card-footer .views svg {
+    margin-right: 8px;
+}
+.cardcategory{
+    width: 30%;
+}
+/* Like and Dislike styles */
+.like-dislike {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.like:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.dislike:hover {
+    color: red;
+    cursor: pointer;
+}
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: 0 auto; /* Center the search box horizontally */
+
+  }
+  .input-search:focus ~ .btn-search {
+    display: none;
+  }
+  .input-search.visible {
+    width: 200px; /* Adjust width as needed */
+    opacity: 1;
+  }
+  
+  .input-search:focus {
+    width: 200px; /* Adjust width as needed */
+    opacity: 1;
+  }
+  .input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    /* background-color: #22a6b3; */
+    background-color: transparent;
+    padding-right: 40px;
+    color: #fff;
+  }
+  
+  .input-search::placeholder {
+    color: black;
+  }
+  
+  .input-search {
+    color: black;
+  }
+  .search-boxcategory
+  .btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    top: 90%;
+    position: absolute;
+    background-color: red;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+  }
+  
+  .btn-search:focus ~ .input-search,
+  .input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .btn-search {
+
+  }
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.fasearsh>svg{
+    color: black;
+    display: none;
+}
+.containercategory
+.pagination button:hover {
+    background-color: #e2e6ea;
+}
+@media screen and (max-width:1400px) {
+.cardcategory{
+    width: 40%;
+}
+}
+@media screen and (max-width:1200px) {
+    .card{
+        margin-left: 5%;
+    }
+    .search-boxcategory{
+        width: 30%;
+    }
+    .search-boxcategory .btn-search{
+    right: 15%;
+
+}
+}
+@media screen and (max-width:1100px) {
+    .card-footer{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1000px) {
+.card{
+    width: 40%;
+}}
+@media screen and (max-width:900px) {
+    .cardcategory{
+        width: 85%;
+    }
+    .containercategoryhome .card{
+    width: 35%;
+}
+.btn-search{
+bottom:  200px;
+}
+.card{
+    margin-left: 10%;
+}
+.fasearsh{
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width:720px) {
+    .input-search:focus {
+        margin-left: -120%;      }
+      .input-search.open {
+        margin-left: -120%; /* Adjust the width as needed */
+      }
+}
+@media screen and (max-width:685px) {
+    .search-boxcategory .btn-search{
+        right: 12%;
+    }
+    .container{
+        flex-direction: column;
+                
+            }
+            .card{
+        width: 85%!important;
+
+            }
+        .date{
+            font-size: 20px;
+        }
+        .views{
+            font-size: 20px;
+        }
+        .like>svg{
+            font-size: 20px;
+        }
+        .dislike>svg{
+            font-size: 20px;
+        }
+        .cardcategory{
+            font-size:22px ;
+        }
+        .card-content>h3{
+        font-size: 28px;
+        }
+        .card-content>p{
+            font-size: 20px;
+        }
+}
+@media screen and (max-width:645px) {
+    .categoryname{
+        font-size: 18px;
+        width: 40%;
+    }
+.card{
+    margin-left: 2%;
+}
+}
+@media screen and (max-width:520px) {
+    .search-boxcategory .btn-search{
+        right: 10%;
+    }
+}
+@media screen and (max-width:450px) {
+    .search-boxcategory .btn-search{
+        right: 8%;
+    }
+    .container{
+flex-direction: column;
+        
+    }
+    
+.date{
+    font-size: 14px;
+}
+.input-search:focus {
+    width: 150px; /* Adjust the width as needed */
+  }
+.views{
+    font-size: 14px;
+}
+.like>svg{
+    font-size: 14px;
+}
+.dislike>svg{
+    font-size: 14px;
+}
+.cardcategory{
+    font-size:18px ;
+}
+.card-content>h3{
+font-size: 24px;
+}
+.card-content>p{
+    font-size: 16px;
+}
+}
+@media screen and (max-width:360px) {
+    .search-boxcategory .btn-search{
+        right: 6%;
+    }
+    .categoryname{
+        width: 60%;
+    }
+}

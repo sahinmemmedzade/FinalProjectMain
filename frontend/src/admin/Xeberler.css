@@ -1,0 +1,257 @@
+/* Xeberler.css */
+.xeberler-xeberadmin {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xeber-actions-xeberadmin {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.xeber-actions-xeberadmin li {
+  padding: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.xeber-actions-xeberadmin li:hover {
+  color: #007BFF;
+}
+
+.xeber-form-xeberadmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.xeber-form-xeberadmin label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.xeber-form-xeberadmin input,
+.xeber-form-xeberadmin textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.submit-button-xeberadmin {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.submit-button-xeberadmin:hover {
+  background-color: #218838;
+}
+
+.all-news-xeberadmin {
+  margin-top: 20px;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.deleteandupdatexeberadmin{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-item-xeberadmin {
+  position: relative;
+  width: 27%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.news-item-xeberadmin:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-actions-xeberadmin {
+    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+/* Kategoriyanı seçmək üçün select elementinin tərzi */
+.xeber-form-xeberadmin select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Məzmun üçün textarea tərzi */
+.xeber-form-xeberadmin textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.news-actions-xeberadmin button {
+  color: #007BFF;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.news-actions-xeberadmin button:hover {
+  color: #0056b3;
+}
+
+.selected-news-xeberadmin {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 80%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button-xeberadmin,
+.back-button-xeberadmin {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.delete-button-xeberadmin {
+  background-color: #dc3545;
+  color: white;
+}
+.selected-news-xeberadmin>p{
+    display: flex;
+flex-direction: column;
+}
+.delete-button-xeberadmin:hover {
+  background-color: #c82333;
+}
+
+.back-button-xeberadmin {
+  background-color: #007BFF;
+  color: white;
+}
+
+.back-button-xeberadmin:hover {
+  background-color: #0056b3;
+}
+/* Style for news images */
+.news-image-xeberadmin {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the image */
+  }
+.deleetandupdate{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+  @media screen and (max-width:1200px) {
+    .news-actions-xeberadmin>button{
+        font-size: 12px;
+    }
+    .news-item-xeberadmin{
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width:890px) {
+    .xeber-form-xeberadmin{
+        width: 80%;
+    }
+    .news-item-xeberadmin>p{
+        font-size: 12px;
+    }
+    .xeber-form-xeberadmin label{
+        font-size: 14px;
+    }
+  }
+  @media screen and (max-width:800px) {
+    
+.news-item-xeberadmin {
+    width: 45%;
+}
+    .news-actions-xeberadmin{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .news-actions-xeberadmin>button{
+        width: 100%;
+     
+    }
+  }
+  @media screen and (max-width:500px) {
+    .deleetandupdate{
+        width: 80%;
+        
+    }
+  }
+  @media screen and (max-width:430px) {
+    
+    .news-item-xeberadmin>p{
+        font-size: 10px;
+    }
+    .news-item-xeberadmin>h4{
+        font-size: 14px;
+    }
+  }

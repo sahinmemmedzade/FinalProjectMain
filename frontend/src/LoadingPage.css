@@ -1,0 +1,48 @@
+/* LoadingPage.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .loading-circle {
+    stroke-dasharray: 251; /* Halqanın uzunluğu */
+    stroke-dashoffset: 251; /* Halqanın başlanğıc vəziyyəti */
+    animation: dash 3s linear infinite; /* Animasiya effekti */
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 251; /* Halqa tamamilə dolmamış */
+    }
+    100% {
+      stroke-dashoffset: 0; /* Halqa tamamilə dolmuş */
+    }
+  }
+  
+  .loading-text {
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .loading-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

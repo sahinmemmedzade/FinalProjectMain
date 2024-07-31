@@ -1,0 +1,73 @@
+.reviewadmin {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .reviewadmin-header {
+    display: flex;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .reviewadmin-title,
+  .reviewadmin-news-title,
+  .reviewadmin-delete {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .reviewadmin-item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .reviewadmin-item:hover .reviewadmin-delete-button {
+    right: 10px;
+    opacity: 1;
+  }
+  
+  .reviewadmin-title {
+    flex: 2;
+  }
+  
+  .reviewadmin-news-title {
+    flex: 2;
+  }
+  
+  .reviewadmin-actions {
+    flex: 1;
+    position: relative;
+  }
+  
+  .reviewadmin-delete-button {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f44336; /* Red color for the button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: right 0.3s, opacity 0.3s;
+  }
+  @media screen and (max-width: 450px) {
+    .reviewadmin-title {
+      font-size: 12px; /* Adjust font size as needed */
+    }
+  
+    .reviewadmin-item {
+      font-size: 12px;
+    }
+  
+    .reviewadmin-header {
+      font-size: 12px; /* Adjust font size for the header */
+      padding: 5px; /* Adjust padding if needed */
+    }
+  }

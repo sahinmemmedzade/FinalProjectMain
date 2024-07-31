@@ -1,0 +1,280 @@
+.article-container {
+    width: 60%;
+    margin: 30px auto 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .articleimg  {
+    width: 100%;
+    height: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .reaction-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .like-dislike {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like, .dislike {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  .like span, .dislike span {
+    margin-left: 5px;
+  }
+  
+  .font-size-buttons {
+    margin-left: auto;
+  }
+  
+  .font-size-button {
+    background-color: transparent;
+    border: none;    
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .ARTICLEDESCRIPTION{
+    width: 100%;
+    display: flex;
+flex-direction: column;
+align-items: center; 
+}
+.like.active {
+  color: #218838; /* Daha tünd yaşıl rəng, bəyənilmiş halda */
+}
+.comment{
+  display: flex;
+  flex-direction: column;
+}
+.comments{
+  display: flex;
+}
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .article-actions {
+    margin-top: 20px;
+  }
+  
+  .article-actions p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .social-button.facebook {
+    color: #4267B2;
+  }
+  
+  .social-button.telegram {
+    color: #0088cc;
+  }
+  
+  .social-button.x {
+    color: #1DA1F2;
+  }
+  
+  .social-button.copy, .social-button.print {
+    color: #000;
+  }
+  
+  .article-url {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00A8E8;
+    text-decoration: none;
+  }
+  /* Şərhlər bölməsi */
+.comment-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.comment-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.comment-section textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.comment-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.comment-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Şərh siyahısı */
+.allcomennts {
+  margin-top: 20px;
+}
+
+.allcomennts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.allcomennts li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.articles-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.doeslike{
+margin-left: 5%;
+}
+.article-card{
+  width: 50%;
+}
+.article-url{
+  margin-left: 5%;
+}
+.socialmedia{
+  margin-left: 5%;
+}
+.categorycard{
+  font-size: 30px !important;
+}
+.article-card>.card{
+  width: 80%;
+  margin-top: 10px;
+}
+.categorycard{
+  color: #218838;
+  font-size: larger;
+}
+.allcomennts .comment {
+  font-size: 1em;
+}
+
+.allcomennts .comment strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.comment-actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: black;
+  width: 20000px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.comment-actions button:hover {
+  background-color: #0056b3;
+}
+  .article-url:hover {
+    text-decoration: underline;
+  }
+  
+  .comments-section {
+    margin-top: 20px;
+  }
+  
+  .comments-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .comments-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .comments-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .article-container {
+      width: 80%;
+    }
+   
+   
+  }
+  
+  @media screen and (max-width: 700px) {
+    .article-container {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .doeslike{
+      font-size: 12px!important;
+    }
+    .descriptioncard{
+      font-size: 16px!important;
+    }
+  }
+  @media screen and (max-width: 685px) {
+    .comment-section{
+      margin-left:40px ;
+    }
+  
+    .article-card{
+width: 85%;
+margin-left: 10%;
+    }
+  }
